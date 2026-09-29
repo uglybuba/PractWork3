@@ -1,1 +1,40 @@
+name: Сообщение о дефекте
+description: Шаблон для создания отчета о дефекте
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Описание дефекта
+      description: Что произошло?
+      placeholder: Опишите найденную ошибку
+    validations:
+      required: true 
+- type: dropdown
+    id: bug_severity
+    attributes:
+      label: Критичность дефекта
+      description: Выберите уровень серьезности проблемы
+      options:
+       - Критическая
+       - Высокая
+       - Средняя
+       - Низкая
+    validations:
+      required: true
+- type: markdown
+    attributes:
+      value: |
+        Приложите скриншоты
+  - type: checkboxes
+    id: bug_checklist
+    attributes:
+      label: Чек-лист
+      description: Отметьте выполненные пункты
+      options:
+      - label: Такой дефект ещё не зарегистрирован
+        required: true
+        - label: Я приложил(а) скриншоты
+        required: false
 
