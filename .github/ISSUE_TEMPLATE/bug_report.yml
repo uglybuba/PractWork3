@@ -1,6 +1,6 @@
-name: "Сообщение о дефекте"
-description: "Шаблон для создания отчета о дефекте"
-title: "[Bug]: "
+name: сообщение о дефекте
+description: шаблон для создания отчета о дефекте
+title: "[Ошибка]: "
 labels: ["bug"]
 body:
   - type: textarea
