@@ -10,7 +10,7 @@ body:
       description: Что произошло?
       placeholder: Опишите найденную ошибку
     validations:
-      required: true 
+      required: true
 - type: dropdown
     id: bug_severity
     attributes:
