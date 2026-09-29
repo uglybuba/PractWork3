@@ -1,4 +1,4 @@
-name: сообщение о дефекте
+name: bug report
 description: шаблон для создания отчета о дефекте
 title: "[Ошибка]: "
 labels: ["bug"]
